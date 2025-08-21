@@ -1,0 +1,55 @@
+# ---- Terraform ----
+# State files
+*.tfstate
+*.tfstate.*
+*.tfvars.json
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Terraform plan outputs
+*.tfplan
+
+# Override files (souvent locaux)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Cache et lock
+.terraform/
+.terraform.lock.hcl
+
+# Sensitive variable files
+*.tfvars
+*.auto.tfvars
+
+# ---- AWS Credentials ----
+# Ne JAMAIS commit ~/.aws/credentials
+.aws/
+credentials
+config
+
+# ---- Python (si tu utilises des scripts pour Lambda etc.) ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.env
+.venv/
+venv/
+ENV/
+*.zip
+
+# ---- VSCode / IDE ----
+.vscode/
+.idea/
+*.swp
+
+# ---- Logs ----
+*.log
+
+# ---- MacOS ----
+.DS_Store
